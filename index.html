@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster+Two&display=swap" rel="stylesheet">
+    
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+<body onload="showAlert()">
+
+    <center>
+        <h1 data-aos="fade-down">Halaman Multimedia</h1>
+        <ul>
+
+            <!-- VIDEO -->
+            <li data-aos="fade-up">
+                <h2 id="video" data-aos="fade-right">Video Pemandangan</h2>
+                <hr>
+                <div class="video-container">
+                    <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/I9JvDaciaFk?autoplay=1&mute=1&si=Gp1RHD1QpwgcDW1T" 
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </li>
+
+            <!-- AUDIO -->
+            <li data-aos="fade-left">
+                <h2 id="audio" data-aos="zoom-in">Audio</h2>
+                <hr>
+                <audio controls>
+                    <source src="assets/audio.mp3" type="audio/mpeg">
+                    Browser tidak mendukung audio ini.
+                </audio>
+            </li>
+
+            <!-- GAMBAR -->
+            <li data-aos="fade-up">
+                <h2 id="gambar" data-aos="flip-up">Gambar Pemandangan</h2>
+                <hr>
+                <img src="assets/beautiful-london-city-view-8k_1538070307-2048x1152.jpg" alt="Gambar 1" class="gambar-besar" data-aos="zoom-in-up">
+            </li>
+
+        </ul>
+    </center>
+
+    <!-- Tambahin di akhir sebelum </body> -->
+    <div class="cursor" id="customCursor"></div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+     <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+     AOS.init({
+        duration: 1200,
+        once: true,
+     });
+     </script>
+</body>
+</html>
+
